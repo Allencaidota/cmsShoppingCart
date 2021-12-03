@@ -7,13 +7,33 @@
 
   <nav th:replace="/fragments/nav :: nav-admin"></nav>
 
-  <main class="container">
-    <div class="row">
-      <div class="col">
-        <h1>Admin Pages</h1>
-      </div>
+  <div class="container">
+
+    <h1 class="display-2">Pages</h1>
+    <a href="/admin/pages/add" class="btn btn-primary">Add new</a>
+
+    <div th:if="${!pages.empty}">
+      <table class="table">
+        <tr>
+          <th>Title</th>
+          <th>Slug</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        <tr th:each="page:${pages}">
+          <td th:text="${page.title}"></td>
+          <td th:text="${page.Slug}"></td>
+          <td><a th:href="@{'/admin/pages/edit' + ${page.id}}">Edit</a></td>
+          <td><a th:href="@{'/admin/pages/delete' + ${page.id}}">Delete</a></td>
+        </tr>
+      </table>
     </div>
-  </main>
+
+    <div th:unless="${!pages.empty}">
+      <p> There are no pages</p>
+    </div>
+
+  </div>>
 
   <div th:replace="/fragments/footer"></div>
 
