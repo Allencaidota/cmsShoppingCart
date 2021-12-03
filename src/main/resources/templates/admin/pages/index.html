@@ -10,7 +10,7 @@
   <div class="container">
 
     <h1 class="display-2">Pages</h1>
-    <a href="/admin/pages/add" class="btn btn-primary">Add new</a>
+    <a href="/admin/pages/add" class="btn btn-primary" mb-5>Add new</a>
 
     <div th:if="${!pages.empty}">
       <table class="table">
@@ -31,6 +31,7 @@
 
     <div th:unless="${!pages.empty}">
       <p> There are no pages</p>
+      <h4 class="display-4">There are no pages at the moment</h4>
     </div>
 
   </div>>
