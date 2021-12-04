@@ -5,6 +5,7 @@ import java.util.List;
 import com.allen.cmsshoppingcart.models.PageRepository;
 import com.allen.cmsshoppingcart.models.data.Page;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,11 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/admin/pages")
 public class AdminPagesController {
 
+    @Autowired
     private PageRepository pageRepo;
 
-    public AdminPagesController(PageRepository pageRepo) {
-        this.pageRepo = pageRepo;
-    }
+    // public AdminPagesController(PageRepository pageRepo) {
+    // this.pageRepo = pageRepo;
+    // }
 
     @GetMapping
     public String index(Model model) {
