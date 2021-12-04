@@ -17,7 +17,7 @@ public class Page {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String tiitle;
+    private String title;
 
     private String slug;
 
