@@ -2,6 +2,7 @@
 It is a spring boot project
 
 12/7 
+
 Finished crud.
 used lombok to ued get, and set int models.
 used html and css for views.
