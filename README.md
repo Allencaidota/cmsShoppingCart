@@ -1,7 +1,7 @@
 # cmsShoppingCart
 It is a shopping cart by using spring boot
 
-12/7 Finished crud. 
+12/7 Page crud. 
 
 M. used lombok to ued get, and set int models.
 
@@ -12,4 +12,5 @@ C. used servlet.mvc.support.RedirectAttributes func to direct page in controller
 used Mysql and JPA to deal with data.
 
 12/8
-categories table 
+categories curd
+
