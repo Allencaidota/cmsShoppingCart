@@ -1,5 +1,5 @@
 # cmsShoppingCart
-It is a spring boot project
+It is a shopping cart by using spring boot
 
 12/7 Finished crud. 
 
