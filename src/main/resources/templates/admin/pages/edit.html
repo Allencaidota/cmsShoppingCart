@@ -9,12 +9,12 @@
 
   <div class="container">
 
-    <h1 class="display-2" th:text="'Edit ' + ${page.title}">Edit a page</h1>
+    <h1 class="display-2" th:text="'Edit ' + ( ${pageTitle} ?: ${page.title} )"></h1>
     <a href="/admin/pages" class="btn btn-primary mb-5">Back to pages</a>
 
     <div th:if="${message}" th:text="${message}" th:class="${'alert ' + alertClass}"></div>
 
-    <form method="post" th:object="${page}" th:action="@{/admin/pages/add}">
+    <form method="post" th:object="${page}" th:action="@{/admin/pages/edit}">
 
       <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger">
         There are errors
@@ -27,7 +27,7 @@
         <span class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span-class>
       </div>
 
-      <div class="from-group">
+      <div class="from-group" th:classappend="${page.slug == 'home'} ? 'd-none' : ''">
         <label for="">Slug:</label>
         <input type="text" class="form-control" th:field="*{slug}" th:value="${page.slug}" placeholder="Slug">
       </div>
