@@ -11,6 +11,7 @@ C. used servlet.mvc.support.RedirectAttributes func to direct page in controller
 
 used Mysql and JPA to deal with data.
 
-12/8
-categories curd
 
+12/10 categories curd
+
+same code with page in categories, but i got more practice 
