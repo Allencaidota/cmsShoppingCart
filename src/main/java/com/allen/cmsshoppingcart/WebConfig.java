@@ -18,6 +18,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry
                 .addResourceHandler("/media/**")
                 .addResourceLocations(
-                        "file:/D:/Java/shoppingcart project/cmsshoppingcart/src/main/resources/static/media");
+                        "file:/D:/Java/shoppingcart project/cmsshoppingcart/src/main/resources/static/media/");
+        // D:\Java\shoppingcart project\cmsshoppingcart\src\main\resources\static
     }
 }
