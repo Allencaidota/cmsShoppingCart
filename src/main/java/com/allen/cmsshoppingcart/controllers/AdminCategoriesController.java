@@ -29,7 +29,7 @@ public class AdminCategoriesController {
     @GetMapping
     public String index(Model model) {
 
-        List<Category> categories = categoryRepo.findAll();
+        List<Category> categories = categoryRepo.findAllByOrderBySortingAsc();
 
         model.addAttribute("categories", categories);
 
