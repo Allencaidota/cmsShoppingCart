@@ -15,3 +15,15 @@ used Mysql and JPA to deal with data.
 12/10 categories curd
 
 same code with page in categories, but i got more practice 
+
+12/15 product page
+
+current step : working with curd 
+               added foreign key constraints, so if i delete categoires, the rest of its products should be gone
+
+12/16 product page
+
+current step : finished Admin products pagination
+               added a WYSWIG by using ckeditor5
+               
+               Start to work with home page with nav bar html
