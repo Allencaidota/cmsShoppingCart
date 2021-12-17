@@ -25,3 +25,5 @@ current step : working with curd
 
 current step : finished Admin products pagination
                added a WYSWIG by using ckeditor5
+               
+               Start to work with home page with nav bar html
