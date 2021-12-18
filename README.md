@@ -32,3 +32,5 @@ current step : finished Admin products pagination
 12/17 Front display products
             created PagesController and cateogriesController for home page
             used same pagigination steps form admin products page
+
+12/18 Cart model and Cart partial
