@@ -44,9 +44,10 @@ public class AdminProductsController {
 
         int perPage = 6;
         int page = (p != null) ? p : 0;
-        Pageable pagable = PageRequest.of(page, perPage);
+        Pageable pageable = PageRequest.of(page, perPage);
+        long count = 0;
 
-        Page<Product> products = productRepo.findAll(pagable);
+        Page<Product> products = productRepo.findAll(pageable);
         List<Category> categories = categoryRepo.findAll();
 
         HashMap<Integer, String> cats = new HashMap<>();
@@ -57,7 +58,7 @@ public class AdminProductsController {
         model.addAttribute("products", products);
         model.addAttribute("cats", cats);
 
-        long count = productRepo.count();
+        count = productRepo.count();
         double pageCount = Math.ceil((double) count / (double) perPage);
 
         model.addAttribute("pageCount", (int) pageCount);
