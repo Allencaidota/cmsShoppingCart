@@ -27,3 +27,8 @@ current step : finished Admin products pagination
                added a WYSWIG by using ckeditor5
                
                Start to work with home page with nav bar html
+
+
+12/17 Front display products
+            created PagesController and cateogriesController for home page
+            used same pagigination steps form admin products page
