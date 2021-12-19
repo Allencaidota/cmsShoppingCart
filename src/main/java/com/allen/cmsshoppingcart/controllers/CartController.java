@@ -44,6 +44,19 @@ public class CartController {
             }
         }
 
+        HashMap<Integer, Cart> cart = (HashMap<Integer, Cart>) session.getAttribute("cart");
+
+        int size = 0;
+        double total = 0;
+
+        for (Cart value : cart.values()) {
+            size += value.getQuantity();
+            total += value.getQuantity() * Double.parseDouble(value.getPrice());
+        }
+
+        model.addAttribute("size", size);
+        model.addAttribute("total", total);
+
         return null;
     }
 }

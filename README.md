@@ -34,3 +34,9 @@ current step : finished Admin products pagination
             used same pagigination steps form admin products page
 
 12/18 Cart model and Cart partial
+            created cart model and cart partial view
+
+12/19 add to cart
+            added "Product added!" notification in products.html
+            used css to move its position and hide the notification
+            used script to do the effect that when we click "add to cart" it will show the "Product added!" notification
