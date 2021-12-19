@@ -57,6 +57,16 @@ public class CartController {
         model.addAttribute("size", size);
         model.addAttribute("total", total);
 
+        return "cart_view";
+    }
+
+    @RequestMapping("/view")
+    public String view(HttpSession session, Model mode) {
+
+        if (session.getAttribute("cart") == null) {
+            return "redirect:/";
+        }
+
         return null;
     }
 }
