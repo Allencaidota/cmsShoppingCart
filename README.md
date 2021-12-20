@@ -40,3 +40,8 @@ current step : finished Admin products pagination
             added "Product added!" notification in products.html
             used css to move its position and hide the notification
             used script to do the effect that when we click "add to cart" it will show the "Product added!" notification
+
+
+        created cart view
+        cart view has all products informatiom.
+        customer can add, subtract, and remove prodcuts in the cart view
