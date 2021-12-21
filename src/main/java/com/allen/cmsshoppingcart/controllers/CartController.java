@@ -2,6 +2,7 @@ package com.allen.cmsshoppingcart.controllers;
 
 import java.util.HashMap;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.allen.cmsshoppingcart.models.Cart;
@@ -66,6 +67,54 @@ public class CartController {
         }
 
         return "cart_view";
+    }
+
+    @GetMapping("/subtract/{id}")
+    public String add(@PathVariable int id, HttpSession session, Model model, HttpServletRequest httpServletRequest) {
+
+        Product product = productRepo.getById(id);
+
+        HashMap<Integer, Cart> cart = (HashMap<Integer, Cart>) session.getAttribute("cart");
+
+        int qty = cart.get(id).getQuantity();
+        if (qty == 1) {
+            cart.remove(id);
+            if (cart.size() == 0) {
+                session.removeAttribute("cart");
+            }
+        } else {
+            cart.put(id, new Cart(id, product.getName(), product.getPrice(), --qty, product.getImage()));
+        }
+
+        String refererLink = httpServletRequest.getHeader("referer");
+
+        return "redirect:" + refererLink;
+    }
+
+    @GetMapping("/remove/{id}")
+    public String remove(@PathVariable int id, HttpSession session, Model model,
+            HttpServletRequest httpServletRequest) {
+
+        HashMap<Integer, Cart> cart = (HashMap<Integer, Cart>) session.getAttribute("cart");
+
+        cart.remove(id);
+        if (cart.size() == 0) {
+            session.removeAttribute("cart");
+        }
+
+        String refererLink = httpServletRequest.getHeader("referer");
+
+        return "redirect:" + refererLink;
+    }
+
+    @GetMapping("/clear")
+    public String clear(HttpSession session, HttpServletRequest httpServletRequest) {
+
+        session.removeAttribute("cart");
+
+        String refererLink = httpServletRequest.getHeader("referer");
+
+        return "redirect:" + refererLink;
     }
 
     @RequestMapping("/view")

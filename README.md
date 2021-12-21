@@ -1,9 +1,11 @@
 # cmsShoppingCart
 It is a shopping cart by using spring boot
 
+Admin section
+
 12/7 Page crud. 
 
-M. used lombok to ued get, and set int models.
+M. used lombok to ued get, and set int models(data).
 
 V. used html and css for views.
 
@@ -29,6 +31,9 @@ current step : finished Admin products pagination
                Start to work with home page with nav bar html
 
 
+Home page section
+
+
 12/17 Front display products
             created PagesController and cateogriesController for home page
             used same pagigination steps form admin products page
@@ -42,6 +47,28 @@ current step : finished Admin products pagination
             used script to do the effect that when we click "add to cart" it will show the "Product added!" notification
 
 
+Cart section
+
+
         created cart view
-        cart view has all products informatiom.
-        customer can add, subtract, and remove prodcuts in the cart view
+            cart view has all products informatiom.
+            customer can add, subtract, and remove prodcuts in the cart view
+
+12/20 Subtract product
+            get the hashmap from the view
+            if the products have more than 1, we only need to subtract the qty of the product
+            if the product only has one qty, we will remove the product from the cart
+            
+      Remove product and clear cart
+            just remove the product in the hashmap by id
+            and clear cart would be remove everything
+
+
+12/21 Paypal checkout
+            customer will get a redirect to paypal checkout after click pay in cart page. 
+            First, I used css to make the notification clear that the page will overlay while 50%, and hide the paypal botton.
+            Next, I added palpay checkout function from using paypal developer api.
+            Then, I used time thyme to get all name, price, and amount of products.
+            Finally, I used script to make the checkout button to submit info.
+
+

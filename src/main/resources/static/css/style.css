@@ -7,7 +7,11 @@ table.sorting tr:not(.home) {
 }
 
 .ui-state-highlight {
-    border: 1px dashed #ccc
+    border: 1px dashed #ccc;
+}
+
+.ck.ck-content {
+    height: 200px;
 }
 
 div.productAdded {
@@ -18,4 +22,22 @@ div.productAdded {
 
 .hide {
     display: none;
+}
+
+div.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .9);
+}
+
+div.overlay > img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form#paypalform {
+    position: absolute;
+    left: -3000px;
 }
