@@ -38,7 +38,7 @@ Home page section
 
 12/18 Cart model and Cart partial
 
-            created cart model and cart partial view
+           	created cart model and cart partial view
 
 12/19 add to cart
 
@@ -48,7 +48,7 @@ Home page section
 
 Cart section
 
-        created cart view
+        	created cart view
             cart view has all products informatiom.
             customer can add, subtract, and remove prodcuts in the cart view
 
@@ -57,11 +57,11 @@ Cart section
             get the hashmap from the view
             if the products have more than 1, we only need to subtract the qty of the product
             if the product only has one qty, we will remove the product from the cart
-            
-      Remove product and clear cart
-      
-            just remove the product in the hashmap by id
-            and clear cart would be remove everything
+			
+12/20 Remove product and clear cart
+
+            remove the product in the hashmap by id
+            clear cart would be remove everything
 
 12/21 Paypal checkout
 
