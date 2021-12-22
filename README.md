@@ -32,13 +32,16 @@ current step : finished Admin products pagination
 Home page section
 
 12/17 Front display products
+
             created PagesController and cateogriesController for home page
             used same pagigination steps form admin products page
 
 12/18 Cart model and Cart partial
+
             created cart model and cart partial view
 
 12/19 add to cart
+
             added "Product added!" notification in products.html
             used css to move its position and hide the notification
             used script to do the effect that when we click "add to cart" it will show the "Product added!" notification
@@ -50,15 +53,18 @@ Cart section
             customer can add, subtract, and remove prodcuts in the cart view
 
 12/20 Subtract product
+
             get the hashmap from the view
             if the products have more than 1, we only need to subtract the qty of the product
             if the product only has one qty, we will remove the product from the cart
             
       Remove product and clear cart
+      
             just remove the product in the hashmap by id
             and clear cart would be remove everything
 
 12/21 Paypal checkout
+
             customer will get a redirect to paypal checkout after click pay in cart page. 
             First, I used css to make the notification clear that the page will overlay while 50%, and hide the original paypal button.
             Next, I added palpay checkout function from using paypal developer api, and created a new paypal sanbox.
