@@ -62,11 +62,12 @@ Cart section
             clear cart would be remove everything
 
 12/21 Paypal checkout
-	customer will get a redirect to paypal checkout after click pay in cart page. 
-	First, I used css to make the notification clear that the page will overlay while 50%, and hide the original paypal button.
-        Next, I added palpay checkout function from using paypal developer api, and created a new paypal sanbox.
-        Then, I used time thyme to get all name, price, and amount of products to the submit form.
-	Finally, I used script to make the checkout button to submit info.
+
+		customer will get a redirect to paypal checkout after click pay in cart page. 
+		First, I used css to make the notification clear that the page will overlay while 50%, and hide the original paypal button.
+        	Next, I added palpay checkout function from using paypal developer api, and created a new paypal sanbox.
+        	Then, I used time thyme to get all name, price, and amount of products to the submit form.
+		Finally, I used script to make the checkout button to submit info.
          
 
 12/22 Spring security
