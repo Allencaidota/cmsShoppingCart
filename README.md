@@ -69,4 +69,6 @@ Cart section
             Then, I used time thyme to get all name, price, and amount of products to the submit form.
             Finally, I used script to make the checkout button to submit info.
 
+12/22 Spring security
 
+	
