@@ -49,7 +49,6 @@ Home page section
 
 Cart section
 
-
         created cart view
             cart view has all products informatiom.
             customer can add, subtract, and remove prodcuts in the cart view
