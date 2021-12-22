@@ -13,7 +13,6 @@ C. used servlet.mvc.support.RedirectAttributes func to direct page in controller
 
 used Mysql and JPA to deal with data.
 
-
 12/10 categories curd
 
 same code with page in categories, but i got more practice 
@@ -30,9 +29,7 @@ current step : finished Admin products pagination
                
                Start to work with home page with nav bar html
 
-
 Home page section
-
 
 12/17 Front display products
             created PagesController and cateogriesController for home page
@@ -45,7 +42,6 @@ Home page section
             added "Product added!" notification in products.html
             used css to move its position and hide the notification
             used script to do the effect that when we click "add to cart" it will show the "Product added!" notification
-
 
 Cart section
 
@@ -61,7 +57,6 @@ Cart section
       Remove product and clear cart
             just remove the product in the hashmap by id
             and clear cart would be remove everything
-
 
 12/21 Paypal checkout
             customer will get a redirect to paypal checkout after click pay in cart page. 
