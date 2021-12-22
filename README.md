@@ -5,11 +5,11 @@ Admin section
 
 12/7 Page crud. 
 
-M. used lombok to ued get, and set int models(data).
+M.  lombok to ued get, and set int models(data).
 
-V. used html and css for views.
+V.  html and css for views.
 
-C. used servlet.mvc.support.RedirectAttributes func to direct page in controller.
+C.  servlet.mvc.support.RedirectAttributes func to direct page in controller.
 
 used Mysql and JPA to deal with data.
 
@@ -27,8 +27,6 @@ current step : working with curd
 current step : finished Admin products pagination
                added a WYSWIG by using ckeditor5
                
-               Start to work with home page with nav bar html
-
 Home page section
 
 12/17 Front display products
