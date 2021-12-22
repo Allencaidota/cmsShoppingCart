@@ -20,7 +20,7 @@ same code with page in categories, but i got more practice
 12/15 product page
 
 current step : working with curd 
-               added foreign key constraints, so if i delete categoires, the rest of its products should be gone
+	added foreign key constraints, so if i delete categoires, the rest of its products should be gone
 
 12/16 product page
 
