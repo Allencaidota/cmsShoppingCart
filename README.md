@@ -70,6 +70,5 @@ Cart section
 		Finally, I used script to make the checkout button to submit info.
          
 
-12/22 Spring security
-
+12/22 Adding String boot security dependency
 	
