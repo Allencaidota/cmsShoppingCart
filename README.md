@@ -76,3 +76,15 @@ Cart section
 		
 		having bug when switch YAML to applictaion.properties, which was solve by update configuration  in springboot
 	
+12/23 limit partial page visibility by SecurityConfig
+
+		@Service
+			public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    		@Override
+    		protected void configure(HttpSecurity http) throws Exception {
+        		http
+                	.authorizeRequests()
+                	.antMatchers("/").permitAll();
+    		}
+		}
