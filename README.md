@@ -84,7 +84,24 @@ Cart section
     		@Override
     		protected void configure(HttpSecurity http) throws Exception {
         		http
-                	.authorizeRequests()
-                	.antMatchers("/").permitAll();
+                .authorizeRequests()
+                .antMatchers("/").permitAll()
+                .antMatchers("/**").hasAnyRole("USER");S
     		}
 		}
+
+12/23 Creating users and admin tables in MySQL
+
+12/24 Creating User and Admin entities 
+		
+		mainly use org.springframework.security.core.authority.SimpleGrantedAuthority
+
+12/24 Registration controller and user and admin repository
+
+		created paswordEncoder in SecurityConfig as Bean
+
+12/24 GET register and POST register
+
+		creating register.html views for allow customer to get register 
+
+		after user register the form will be submit and it will be redrict to login 
