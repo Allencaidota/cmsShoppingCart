@@ -105,3 +105,5 @@ Cart section
 		creating register.html views for allow customer to get register 
 
 		after user register the form will be submit and it will be redrict to login 
+
+12/25 merry christmas
