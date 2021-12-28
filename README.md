@@ -116,7 +116,7 @@ Cart section
 
 		create getMapping login method in pageController
 
-		create login.html view
+		create login.html view. customer will redirect to last page that they clicked.
 
 		limit user and admin account in SecurityConfig.java
 
@@ -143,6 +143,12 @@ Cart section
         	// .antMatchers("/category/**").access("hasRole('ROLE_USER')")
         	// .antMatchers("/").access("permitAll");
     	}
+
+12/28 Main nav revisited
+
+		mortify nav bar when customer logined, the nav bar will show logout instead of register and login option. 
+
+		I add new buttons to nav bar and Principal that helps to check if customer is logined int Common.java.
 
 
 

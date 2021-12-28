@@ -1,5 +1,6 @@
 package com.allen.cmsshoppingcart;
 
+import java.security.Principal;
 import java.util.HashMap;
 import java.util.List;
 
@@ -27,7 +28,11 @@ public class Common {
     private CategoryRepository categoryRepo;
 
     @ModelAttribute
-    public void sharedDate(Model model, HttpSession session) {
+    public void sharedDate(Model model, HttpSession session, Principal principal) {
+
+        if (principal != null) {
+            model.addAttribute("principal", principal.getName());
+        }
 
         List<Page> pages = pageRepo.findAllByOrderBySortingAsc();
 
