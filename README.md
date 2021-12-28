@@ -112,4 +112,38 @@ Cart section
 
 		UserDetailsService is about to load data for user 
 
+12/27 Login
+
+		create getMapping login method in pageController
+
+		create login.html view
+
+		limit user and admin account in SecurityConfig.java
+
+		@Override
+    	protected void configure(HttpSecurity http) throws Exception {
+        	http
+                .authorizeRequests()
+                .antMatchers("/category/**").hasAnyRole("USER", "ADMIN")
+                .antMatchers("/admin/**").hasAnyRole("ADMIN")
+                .antMatchers("/").permitAll()
+                .and()
+                .formLogin()
+                .loginPage("/login")
+                .and()
+                .logout()
+                .logoutSuccessUrl("/")
+                .and()
+                .exceptionHandling()
+                .accessDeniedPage("/");
+        	// .antMatchers("/**").hasAnyRole("USER");
+
+        	// http
+        	// .authorizeRequests()
+        	// .antMatchers("/category/**").access("hasRole('ROLE_USER')")
+        	// .antMatchers("/").access("permitAll");
+    	}
+
+
+
 
