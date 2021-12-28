@@ -150,6 +150,8 @@ Cart section
 
 		I add new buttons to nav bar and Principal that helps to check if customer is logined int Common.java.
 
+12/28 Admin login and login failed message
 
+		adding admin login information in mysql, and failed message when user input wrong password
 
 
