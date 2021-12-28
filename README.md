@@ -107,3 +107,9 @@ Cart section
 		after user register the form will be submit and it will be redrict to login 
 
 12/25 merry christmas
+
+12/27 UserDetailsService
+
+		UserDetailsService is about to load data for user 
+
+
