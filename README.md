@@ -154,4 +154,3 @@ Cart section
 
 		adding admin login information in mysql, and failed message when user input wrong password
 
-
