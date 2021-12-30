@@ -154,3 +154,14 @@ Cart section
 
 		adding admin login information in mysql, and failed message when user input wrong password
 
+12/30 csrf ajax post fix
+
+		adding csrf to header and mortify inex in admin page and categories 
+
+		let token = $("meta[name='_csrf']").attr("content");
+    	let header = $("meta[name='_csrf_header']").attr("content");
+    	$(document).ajaxSend(function (e, xhr, options) {
+        	xhr.setRequestHeader(header, token);
+    	});
+
+
